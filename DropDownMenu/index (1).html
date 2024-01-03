@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DropDown Menü</title>
+    <script
+      src="https://kit.fontawesome.com/6ab4b1a255.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      li {
+        list-style: none;
+        padding: 5px 15px;
+        margin: 0 10px;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+
+      .menu2 {
+        background-color: rgb(23, 153, 103);
+        display: inline-block;
+        padding: 10px;
+      }
+      .menu2 .menu-item {
+        background-color: lightcoral;
+        display: inline-block;
+        padding: 10px 20px;
+      }
+      .menu2 .menu-item:hover {
+        background-color: lightseagreen;
+        color: white;
+      }
+      .dropdown-list {
+        position: relative;
+      }
+      .dropdown-list ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 34px;
+        text-align: left;
+        padding: 11px;
+        background-color: lightcoral;
+      }
+      li:hover {
+        background-color: lightseagreen;
+      }
+      ul li:hover a {
+        color: white;
+      }
+      .dropdown-list:hover ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menu2">
+      <li class="menu-item"><a href="#">Anasayfa</a></li>
+      <li class="menu-item"><a href="#">Hakkında</a></li>
+      <li class="menu-item dropdown-list">
+        <a href="#">Galeri <i class="fa-solid fa-arrow-down"></i></a>
+        <ul>
+          <li><a href="#">Hayvan Resimleri</a></li>
+          <li><a href="#">İnsan Resimleri</a></li>
+          <li><a href="#">Araba Resimleri</a></li>
+          <li><a href="#">Doğa Resimleri</a></li>
+        </ul>
+      </li>
+      <li class="menu-item"><a href="#">Blog</a></li>
+      <li class="menu-item"><a href="#">İletişim</a></li>
+    </ul>
+  </body>
+</html>
